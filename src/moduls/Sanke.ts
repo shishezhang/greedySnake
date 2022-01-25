@@ -25,9 +25,17 @@ class Sanke{
             return 
         }
         // 设置值时判断撞墙
-        if(value < 0 || value > 290){
-            throw new Error("撞墙了！");
+        // if(value < 0 || value > 290){
+        //     throw new Error("撞墙了！");
+        // }
+        // 金手指模式
+        if(value < 0){
+            value=290
+        } 
+        if(value > 290){
+            value = 0
         }
+        
         // 处理走回头路
         if(this.bodys[1] && value ===  (this.bodys[1] as HTMLElement).offsetLeft){
             // 禁止往左走
@@ -50,8 +58,15 @@ class Sanke{
             return 
         }
         // 设置值时判断撞墙
-        if(value < 0 || value > 290){
-            throw new Error("撞墙了！");
+        // if(value < 0 || value > 290){
+        //     throw new Error("撞墙了！");
+        // }
+        // 金手指模式
+        if(value < 0){
+            value=290
+        } 
+        if(value > 290){
+            value = 0
         }
         // 处理走回头路
         if(this.bodys[1] && value ===  (this.bodys[1] as HTMLElement).offsetTop){
