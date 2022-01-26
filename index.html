@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,51 +25,27 @@
         </div>
         <!-- 计分板 --> 
         <div class="game_panel">
-            <div>SCORE:<div id="score">0</div></div>
-            <div>LEVEL:<div id="level">1</div></div>
+            <div>SCORE:<span id="score">0</span></div>
+            <div>LEVEL:<span id="level">1</span></div>
         </div>
-        <!-- 金手指Goldfinger -->
-        <div class="goldfinger">
-            
-        </div>   
+        <!-- 游戏控制 -->
+        <div class="controllerPanel">
+            <!-- 控制键 -->
+            <div class="controllerBtn">
+                <button data-value='ArrowUp' id="upBtn">上</button>
+                <button data-value='ArrowDown' id="downBtn">下</button>
+                <button data-value='ArrowLeft' id="leftBtn">左</button>
+                <button data-value='ArrowRight' id="rightBtn">右</button> 
+            </div>
+            <!-- 开关键 -->
+            <button id="start_end">暂停/开始</button>
+        </div>  
+        <!-- 金手指 -->
+        <!-- <div class="goldfinger">
+            <div>穿墙：<input type="checkbox" name="a" ></div>
+            <div>穿墙：<input type="checkbox" name="a" ></div>
+            <div>穿墙：<input type="checkbox" name="a" ></div>
+        </div> -->
     </div>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贪吃蛇</title>
-<script defer src="bundle.js"></script></head>
-<body>
-    <!-- 主界面 -->
-    <div id="main">
-        <!-- 游戏舞台 -->
-        <div class="stage">
-            <!-- 贪吃蛇 -->
-            <div id="snake">
-                <div></div>
-            </div>
-            <!-- 食物 -->
-            <div id="food">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <!-- 计分板 --> 
-        <div class="game_panel">
-            <div>SCORE:<div id="score">0</div></div>
-            <div>LEVEL:<div id="level">1</div></div>
-        </div>
-        <!-- 金手指Goldfinger -->
-        <div class="goldfinger">
-            
-        </div>   
-    </div>
-</body>
->>>>>>> 3fb5386241cd8b6f8f59f77df59ac44ad6a7fbba
 </html>
